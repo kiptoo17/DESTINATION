@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Travel Booking Form</h1>
+    <form action="#">
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="destination">Destination:</label>
+      <select id="destination" name="destination" required>
+        <option value="paris">Paris</option>
+        <option value="tokyo">Tokyo</option>
+      </select><br>
+
+      <label for="travel-date">Travel Date:</label>
+      <input type="date" id="travel-date" name="travel-date" required><br>
+
+      <label for="tickets">Number of Tickets:</label>
+      <input type="number" id="tickets" name="tickets" min="1" max="10" required><br>
+
+      <label for="preferences">Preferences:</label>
+      <input type="checkbox" id="window-seat" name="preferences" value="window-seat"> Window Seat<br>
+      <input type="checkbox" id="extra-legroom" name="preferences" value="extra-legroom"> Extra Legroom<br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
